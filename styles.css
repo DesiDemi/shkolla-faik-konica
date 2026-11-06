@@ -135,8 +135,14 @@ button { font: inherit; }
 .activity-card h3 { margin: 0; color: var(--ink); font: 700 16px/1.45 var(--font-display); letter-spacing: -.025em; }
 .activity-card p { margin: 10px 0 0; color: #66757b; font-size: 12px; line-height: 1.75; }
 .activity-arrow { position: absolute; right: 18px; bottom: 17px; color: #bd8f42; font-size: 15px; }
-.awareness-ribbon { position: absolute; top: 17px; right: 17px; width: 30px; height: 36px; color: #d65b88; }
-.awareness-ribbon svg { display: block; width: 100%; height: 100%; }
+.activity-icon { position: absolute; top: 18px; right: 18px; display: block; width: 30px; height: 30px; color: #bd8f42; }
+.activity-icon svg { display: block; width: 100%; height: 100%; }
+.peace-icon { color: #3e8b82; }
+.music-icon { color: #bb8c43; }
+.talk-icon { color: #597e9a; }
+.safety-icon { color: #b76a62; }
+.community-icon { color: #5a8298; }
+.awareness-ribbon { top: 16px; right: 18px; width: 25px; height: 29px; color: #e83e79; }
 .activity-card-awareness .activity-date { background: #fbe5ed; color: #a63e66; }
 
 .achievements-section { min-height: 230px; padding-top: 52px; padding-bottom: 60px; border-top: 1px solid var(--line); }
@@ -203,7 +209,8 @@ button { font: inherit; }
   .activity-card h3 { font-size: 14px; }
   .activity-card p { font-size: 11px; }
   .activity-date { font-size: 9px; }
-  .awareness-ribbon { top: 15px; right: 14px; width: 26px; height: 32px; }
+  .activity-icon { top: 16px; right: 14px; width: 27px; height: 27px; }
+  .awareness-ribbon { top: 15px; right: 15px; width: 23px; height: 27px; }
   .achievements-section { min-height: 190px; padding-top: 38px; padding-bottom: 45px; }
   .achievements-section h2 { font-size: 31px; }
   .site-footer { flex-wrap: wrap; padding: 22px 6%; }
