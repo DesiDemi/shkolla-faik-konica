@@ -38,7 +38,7 @@ button { font: inherit; }
 }
 
 .brand, .footer-brand { display: inline-flex; align-items: center; gap: 11px; }
-.brand img { width: 42px; height: 52px; object-fit: contain; }
+.brand img { width: 54px; height: 64px; object-fit: contain; }
 .brand-name, .footer-brand > span { font: 800 13px/1.35 var(--font-display); letter-spacing: .07em; }
 .brand-city, .footer-brand small { display: block; color: #78838a; font: 600 9px/1.6 var(--font-sans); letter-spacing: .13em; }
 
@@ -80,12 +80,12 @@ button { font: inherit; }
 .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 47px; color: #78838a; font-size: 10px; letter-spacing: .04em; }
 .note-line { width: 31px; height: 1px; background: var(--gold); }
 
-.hero-image-wrap { position: relative; min-width: 0; min-height: 410px; align-self: stretch; margin: 4px 0 15px 3%; }
-.hero-image { width: 100%; height: 100%; min-height: 410px; display: block; object-fit: cover; object-position: center; }
+.hero-image-wrap { position: relative; min-width: 0; align-self: center; margin: 4px 0 15px 3%; }
+.hero-image { width: 100%; height: auto; display: block; }
 .hero-image-wrap::after { position: absolute; z-index: 0; top: 16px; right: -15px; bottom: -15px; left: 16px; border: 1px solid rgba(211, 168, 94, .7); content: ""; pointer-events: none; }
-.image-stamp { position: absolute; z-index: 1; right: -20px; bottom: 42px; display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--paper); color: var(--navy); font: 700 9px/1.45 var(--font-sans); letter-spacing: .08em; }
-.image-stamp img { width: 26px; height: 32px; object-fit: contain; }
-.image-caption { position: absolute; z-index: 1; left: 16px; bottom: 16px; padding: 8px 11px; background: rgba(9,45,67,.83); color: white; font: italic 12px Georgia, serif; }
+.image-stamp { position: absolute; z-index: 1; top: 22px; right: -20px; display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--paper); color: var(--navy); font: 700 9px/1.45 var(--font-sans); letter-spacing: .08em; }
+.image-stamp img { width: 36px; height: 44px; object-fit: contain; }
+.image-caption { position: relative; z-index: 1; display: table; margin-top: 12px; padding: 8px 11px; background: rgba(9,45,67,.9); color: white; font: italic 12px Georgia, serif; }
 .hero-index { position: absolute; right: 7.2%; bottom: 24px; display: flex; align-items: center; gap: 11px; color: #748087; font-size: 9px; letter-spacing: .12em; }
 .hero-index span { width: 35px; height: 1px; background: var(--gold); }
 
@@ -137,12 +137,12 @@ button { font: inherit; }
 .achievements-section h2 { margin-top: 24px; font-size: 36px; }
 
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 25px 7.2%; border-top: 1px solid var(--line); background: #f1efe8; }
-.footer-brand img { width: 31px; height: 39px; object-fit: contain; }
+.footer-brand img { width: 46px; height: 56px; object-fit: contain; }
 .footer-brand > span { font-size: 10px; }
 .footer-brand small { font-size: 8px; }
 .site-footer > p { color: #778288; font-size: 10px; }
-.site-footer .site-credit { color: #65747a; }
-.site-credit strong { color: var(--ink); }
+.site-footer .site-credit { margin: 0; padding: 11px 15px; border-left: 3px solid var(--gold); background: var(--paper); color: #65747a; font-size: 11px; line-height: 1.5; }
+.site-credit strong { display: block; color: var(--navy); font: 800 14px/1.5 var(--font-display); letter-spacing: .02em; }
 
 @media (min-width: 1440px) {
   .site-header, .hero, .site-footer { padding-right: max(7.2%, calc((100% - 1260px) / 2)); padding-left: max(7.2%, calc((100% - 1260px) / 2)); }
@@ -162,7 +162,7 @@ button { font: inherit; }
 @media (max-width: 650px) {
   html { scroll-padding-top: 70px; }
   .site-header { height: 70px; padding: 0 5%; }
-  .brand img { width: 35px; height: 44px; }
+  .brand img { width: 42px; height: 50px; }
   .brand-name { font-size: 11px; }
   .brand-city { font-size: 8px; }
   .navigation { display: none; }
@@ -172,9 +172,8 @@ button { font: inherit; }
   .hero h1 { font-size: clamp(46px, 12vw, 64px); }
   .hero-description { max-width: 460px; font-size: 13px; }
   .hero-note { margin-top: 28px; }
-  .hero-image-wrap { min-height: 270px; margin: 0 9px 14px 0; }
-  .hero-image { min-height: 270px; }
-  .image-stamp { right: -10px; bottom: 32px; }
+  .hero-image-wrap { margin: 0 9px 14px 0; }
+  .image-stamp { top: 14px; right: -10px; }
   .hero-index { right: 6%; bottom: 20px; }
   .section-wrap { padding-right: 6%; padding-left: 6%; }
   .intro { grid-template-columns: 1fr; gap: 34px; padding-top: 57px; padding-bottom: 62px; }
